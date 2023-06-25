@@ -19,7 +19,7 @@ const RDIHome = () => {
 
   // Fetch the data from MongoDB using an API endpoint
   useEffect(() => {
-    fetch("http://localhost:8080/api/v1/projects")
+    fetch("https://capstone-fpvj.onrender.com/api/v1/projects")
       .then((response) => response.json())
       .then((data) => {
         // Calculate the dynamic values based on the data

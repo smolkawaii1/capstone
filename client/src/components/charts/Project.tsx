@@ -9,7 +9,7 @@ const Project = () => {
   const [ongoingSeries, setOngoingSeries] = useState<number[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/v1/projects")
+    fetch("https://capstone-fpvj.onrender.com/api/v1/projects")
       .then((response) => response.json())
       .then((data) => {
         const projectsByYear: Record<
